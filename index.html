@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="fontawesome-free-5.10.2-web/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,700,700i,800,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+	<script src='Jquery/jQuery.js'></script>
+	<script src='1.js'></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="form-access"></div>
+		<div class="frame">
+			<div class="starting">
+				<h2 class="header-form">Restaurant Evaluation Survey</h2>
+				<p class="description">Please let us know how was the food and service</p>
+			</div>
+			<hr>
+			<div class="form-vote">
+				<div class="time">
+					<label class="option" for="date">Day Visited:</label>
+					<input type="date" id='date' name='date'>
+				</div>
+				<div class="option-place">
+					<label class="option">Dine In / Take Out:</label>
+					<div id='quality'>
+						<input type="radio" id='stay' name='out'>
+						<label for="stay" >Dine In</label>
+						<input type="radio" id='out' name='out'>
+						<label for="out">Take Out</label>
+					</div>
+				</div>
+				<div class="food-quality">
+					<label class="option">Food Quality:</label>
+					<div id='quality'>
+						<div class="option-vote">
+							<input type="radio" id='excellent' name='foodserviceclean'>
+							<label for="excellent" >Excellent</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='good' name='foodserviceclean'>
+							<label for="good">Good</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='average' name='foodserviceclean'>
+							<label for="average">Average</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='poor' name='foodserviceclean'>
+							<label for="poor">Poor</label>
+						</div>
+					</div>
+				</div>
+				<div class="service">
+					<label class="option">Overall Service Quality:</label>
+					<div id='quality'>
+						<div class="option-vote">
+							<input type="radio" id='excellent-service' name='serviceclean'>
+							<label for="excellent-service" >Excellent</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='good-service' name='serviceclean'>
+							<label for="good-service">Good</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='average-service' name='serviceclean'>
+							<label for="average-service">Average</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='poor-service' name='serviceclean'>
+							<label for="poor-service">Poor</label>
+						</div>
+					</div>
+				</div>
+				<div class="cleanliness">
+					<label class="option">Cleanliness:</label>
+					<div id='quality'>
+						<div class="option-vote">
+							<input type="radio" id='excellent-clean' name='clean'>
+							<label for="excellent-clean" >Excellent</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='good-clean' name='clean'>
+							<label for="good-clean">Good</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='average-clean' name='clean'>
+							<label for="average-clean">Average</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='poor-clean' name='clean'>
+							<label for="poor-clean">Poor</label>
+						</div>
+					</div>
+				</div>
+				<div class="order">
+					<label class="option">Order Accuracy:</label>
+					<div id='quality'>
+						<div class="option-vote">
+							<input type="radio" id='excellent-order' name='order'>
+							<label for="excellent-order" >Excellent</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='good-order' name='order'>
+							<label for="good-order">Good</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='average-order' name='order'>
+							<label for="average-order">Average</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='poor-order' name='order'>
+							<label for="poor-order">Poor</label>
+						</div>
+					</div>
+				</div>
+				<div class="speed-service">
+					<label class="option">Speed of Service:</label>
+					<div id='quality'>
+						<div class="option-vote">
+							<input type="radio" id='excellent-speed' name='speed'>
+							<label for="excellent-speed" >Excellent</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='good-speed' name='speed'>
+							<label for="good-speed">Good</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='average-speed' name='speed'>
+							<label for="average-speed">Average</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='poor-speed' name='speed'>
+							<label for="poor-speed">Poor</label>
+						</div>
+					</div>
+				</div>
+				<div class="value">
+					<label class="option">Value:</label>
+					<div id='quality'>
+						<div class="option-vote">
+							<input type="radio" id='excellent-value' name='value'>
+							<label for="excellent-value" >Excellent</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='good-value' name='value'>
+							<label for="good-value">Good</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='average-value' name='value'>
+							<label for="average-value">Average</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='poor-value' name='value'>
+							<label for="poor-value">Poor</label>
+						</div>
+					</div>
+				</div>
+				<div class="experience">
+					<label class="option">Overall Experience:</label>
+					<div id='quality'>
+						<div class="option-vote">
+							<input type="radio" id='excellent-exp' name='exp'>
+							<label for="excellent-exp" >Excellent</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='good-exp' name='exp'>
+							<label for="good-exp">Good</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='average-exp' name='exp'>
+							<label for="average-exp">Average</label>
+						</div>
+						<div class="option-vote">
+							<input type="radio" id='poor-exp' name='exp'>
+							<label for="poor-exp">Poor</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-comment">
+				<p class='add-comment'>Any comments, questions or suggestions?</p>
+				<textarea name="" id="" cols="60" rows="5" placeholder="Write your comment here..."></textarea>
+			</div>
+			<div class="info-customer">
+				<div class="info">
+					<p class="name">Name: (Optional)</p>
+					<input type="text" name="name" id='name'>
+				</div>
+				<div class="info">
+					<p class="age">Age: </p>
+					<select name="age" id="age">
+						<option value="under13">Under 13</option>
+						<option value="13-20">13-20</option>
+						<option value="20-35">20-35</option>
+						<option value="35-50">35-50</option>
+						<option value="on50">50+</option>
+					</select>
+				</div>
+				<div class="info">
+					<p class="email">Email: (Optional)</p>
+					<input type="email" name="mail" id='mail'>
+				</div>
+			</div>
+			<hr>
+			<div class="post-button">
+				<button class="post">Submit</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
